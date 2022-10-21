@@ -1,6 +1,6 @@
 package com.mercadoLivro.controllers
 
-import com.mercadoLivro.VOS.CustomerVO
+import com.mercadoLivro.vo.CustomerVO
 import com.mercadoLivro.models.Customer
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*

@@ -1,4 +1,4 @@
-package com.mercadoLivro.VOS
+package com.mercadoLivro.vo
 
 class CustomerVO (
     var name: String,
