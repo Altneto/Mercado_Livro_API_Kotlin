@@ -25,7 +25,10 @@ class CustomerService (
         return CustomerDAO(customer.id, customer.name, customer.email)
     }
 
-    fun findAll(): List<Customer> {
+    fun findAll(name: String?): List<Customer> {
+        name?.let {
+            return customerRepository.findByName(name)
+        }
         return customerRepository.findAll().toList()
     }
 

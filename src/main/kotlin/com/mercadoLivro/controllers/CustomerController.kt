@@ -15,8 +15,8 @@ class CustomerController (
     ) {
 
     @GetMapping
-    fun findAll(): List<Customer> {
-        return customerService.findAll()
+    fun findAll(@RequestParam name: String?): List<Customer> {
+        return customerService.findAll(name)
     }
 
     @PostMapping
